@@ -15,7 +15,7 @@
   </head>
   <body>
     <template id="tooltip-template">
-      <span> (?)</span>
+      <slot>Some Default</slot> <span> (?)</span>
     </template>
     <p><pxy-tooltip text="Web Component is a set of standards.">Web Component</pxy-tooltip> are awesome!</p>
     <pxy-tooltip>Here we go!</pxy-tooltip>
