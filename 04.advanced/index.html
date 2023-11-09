@@ -7,16 +7,22 @@
       content="width=device-width, initial-scale=1.0" />
     <title>Web component</title>
     <style>
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      :root {
+        --color-primary: lightblue;
+      }
       div {
         border: 2px solid orange;
       }
     </style>
     <script src="tooltip.js"></script>
-    <script src="confirm-link.js"></script>
   </head>
   <body>
     <p>
-      <pxy-tooltip text="Web Component is a set of standards.">
+      <pxy-tooltip class="important" text="Web Component is a set of standards.">
         <span class="highlight">Web Component</span>
       </pxy-tooltip>
       are awesome!
