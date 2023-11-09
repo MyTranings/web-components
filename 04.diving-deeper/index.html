@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Web component</title>
+    <style>
+      div {
+        border: 2px solid orange;
+      }
+    </style>
+    <script src="tooltip.js"></script>
+    <script src="confirm-link.js"></script>
+  </head>
+  <body>
+    <p>
+      <pxy-tooltip text="Web Component is a set of standards.">
+        <span class="highlight">Web Component</span>
+      </pxy-tooltip>
+      are awesome!
+    </p>
+    <pxy-tooltip>Here we go!</pxy-tooltip>
+    <a is="pxy-confirm-link" href="https://www.google.com">Google</a>
+  </body>
+</html>
