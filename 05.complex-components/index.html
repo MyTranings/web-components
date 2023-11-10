@@ -29,10 +29,12 @@
 
         modal.addEventListener('confirm', () => {
             modal.hide();
+            console.log('confirm event')
         })
 
         modal.addEventListener('cancel', () => {
             modal.hide();
+            console.log('cancel event')
         })
         
         confirmButton.addEventListener('click', function(e) {
