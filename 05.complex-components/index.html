@@ -18,9 +18,29 @@
 </head>
 <body>
     <pxy-modal>
+        <h1 slot="title">Please Confirm</h1>
         <p>With your confirmation you agree to pay the full amount!</p>
     </pxy-modal>
     <p>Please confirm your choice</p>
     <button>Show Details & Confirm</button>
+    <script>
+        const confirmButton = document.querySelector('button');
+        const modal = document.querySelector('pxy-modal');
+
+        modal.addEventListener('confirm', () => {
+            modal.hide();
+        })
+
+        modal.addEventListener('cancel', () => {
+            modal.hide();
+        })
+        
+        confirmButton.addEventListener('click', function(e) {
+            if(!modal.isOpen) {
+                // modal.setAttribute('opened', '');
+                modal.open();
+            }
+        })
+    </script>
 </body>
 </html>
